@@ -1,0 +1,16 @@
+/* src/components/Row.css */
+
+.row {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.row.past .cell {
+    animation: flip 0.3s ease-in-out;
+}
+
+@keyframes flip {
+    from { transform: rotateX(0); }
+    to { transform: rotateX(360deg); }
+}
